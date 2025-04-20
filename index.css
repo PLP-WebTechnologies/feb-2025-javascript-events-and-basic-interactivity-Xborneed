@@ -1,0 +1,286 @@
+body{
+    padding:0;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgba(75, 162, 189);
+}
+
+header{
+    background:linear-gradient(to right, #87b2be, #0072ff);
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    gap:10px;
+    box-shadow: 0 0 3px #87b2be;
+    
+   
+  
+    
+}
+
+.logo{
+   margin-left: 30px;
+}
+
+.logo img{
+    position: relative;
+ 
+    border-radius: 100%;
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    
+}
+
+.navbar ul li{
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px;
+}
+
+.navbar ul li a:hover{
+   
+    color: #ffbc00;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    gap: 10px;
+    padding: 10px;
+   
+}
+
+.search-bar input[type="text"]{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.search-bar input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.search-bar button{
+    padding: 10px 15px;
+    background-color: #0072ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.search-bar button:hover{
+    background-color: #005bb5;
+}
+.search-bar button:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.search-bar button:active{
+    transform: scale(0.95);
+}
+
+.toggleBars{
+   
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 10px;
+   
+   
+}
+.bars{
+    display: none;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    background-color: rgba(75, 162, 189);
+    animation: slideIn 5s ease-in-out;
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+   
+
+
+
+.form-container form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.form-container form h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0072ff;
+}
+.form-container form input[type="text"],
+.form-container form input[type="password"]{
+    width: 92%;
+    padding: 10px;
+    
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-container form input[type="text"]:focus,
+.form-container form input[type="password"]:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.form-container form button{
+    width: 100%;
+    padding: 10px;
+    background-color: #0072ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.form-container form button:hover{
+    background-color: #005bb5;
+}
+.form-container form button:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.form-container form button:active{
+    transform: scale(0.95);
+}
+.form-container form .error-message{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+.form-container form .success-message{
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+.form-container form .forgot-password{
+    text-align: center;
+    margin-top: 10px;
+}
+.form-container form .forgot-password a{
+    text-decoration: none;
+    color: #0072ff;
+}
+.form-container form .forgot-password a:hover{
+    text-decoration: underline;
+}
+.form-container form .forgot-password a:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.form-container form .forgot-password a:active{
+    transform: scale(0.95);
+}
+.form-container form .forgot-password a:visited{
+    color: #0072ff;
+}
+.form-container form .forgot-password a:link{
+    color: #0072ff;
+}
+.form-container form .forgot-password a:active{
+    color: #005bb5;
+}
+.form-container form .forgot-password a:focus{
+    color: #005bb5;
+}
+.form-container form .forgot-password a:hover{
+    color: #005bb5;
+}
+
+
+@media (max-width:768px){
+
+    header{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:70px;
+        text-wrap: wrap;
+    }
+
+    .navbar{
+        display:none;
+    }
+
+    .navbar ul{
+       
+        display: block;
+        flex-direction: column;
+       
+    }
+
+    .navbar ul li{
+        padding:10px
+    }
+
+    .bars{
+        display: block;
+        position: relative;
+        top:-250px;
+        right: -200px;
+      
+    }
+
+    .search-bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+    
+
+
+
+}
